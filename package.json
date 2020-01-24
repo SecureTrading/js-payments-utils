@@ -10,7 +10,10 @@
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
-  "files": ["dist", "types.d.ts"],
+  "files": [
+    "dist",
+    "types.d.ts"
+  ],
   "main": "dist/utils.js",
   "types": "types.d.js",
   "repository": {
