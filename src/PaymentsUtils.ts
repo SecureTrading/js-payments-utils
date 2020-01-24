@@ -1,3 +1,3 @@
 import Lookup from './lookup';
 
-export { Lookup };
+export default { Lookup };

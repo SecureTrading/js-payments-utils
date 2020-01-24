@@ -5,12 +5,12 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    utils: './src/main.ts'
+    PaymentsUtils: './src/PaymentsUtils.ts'
   },
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'dist'),
-    library: 'utils',
+    library: 'PaymentsUtils',
     libraryExport: 'default',
     libraryTarget: 'commonjs',
     publicPath: '',

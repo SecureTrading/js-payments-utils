@@ -14,7 +14,7 @@
     "dist",
     "types.d.ts"
   ],
-  "main": "dist/utils.js",
+  "main": "dist/PaymentsUtils.js",
   "types": "types.d.js",
   "repository": {
     "type": "git",
