@@ -20,6 +20,9 @@
     "type": "git",
     "url": "git+https://github.com/SecureTrading/js-payments-utils.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
   "license": "MIT",
   "bugs": {
