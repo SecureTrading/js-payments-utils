@@ -51,7 +51,7 @@
     "jest": "^24.9.0",
     "jest-each": "^25.1.0",
     "jest-fetch-mock": "^3.0.1",
-    "jest-get-type": "^24.9.0",
+    "jest-get-type": "^25.1.0",
     "prettier": "1.19.1",
     "snyk": "^1.279.0",
     "ts-jest": "^24.3.0",
