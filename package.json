@@ -1,6 +1,6 @@
 {
   "name": "@securetrading/js-payments-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "> A JavaScript library for different utility functions focused around online payment processing.",
   "scripts": {
     "build": "webpack --config webpack.js",
