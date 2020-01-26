@@ -1,4 +1,6 @@
 import Lookup from './lookup';
 import validation from './validation';
 
-export default { Lookup, validation };
+const lookup = new Lookup().lookup;
+
+export default { iinLookup: lookup, validation };
