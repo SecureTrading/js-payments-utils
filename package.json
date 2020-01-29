@@ -24,6 +24,7 @@
     "snyk:test": "snyk test --org=secure-trading",
     "snyk:protect": "snyk protect",
     "snyk:monitor": "snyk monitor --org=secure-trading",
-    "prepare": "npm run snyk:protect"
+    "prepare": "npm run snyk:protect",
+    "prepublish": "lerna run prepublish"
   }
 }

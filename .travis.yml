@@ -2,6 +2,10 @@ language: node_js
 os: linux
 node_js:
   - '10'
+cache:
+ npm: true
+ directories:
+  - "node_modules"
 before_install:
   - npm install -g npm@latest
 install:
@@ -11,14 +15,17 @@ install:
 jobs:
   include:
     - stage: Test
-      name: Unit tests
+      name: "Lint"
       script:
-        - npm run coverage
         - npm run lint
-        - npm run snyk:test
+    - name: "Unit test"
+        script: npm run coverage
+    - name: "Snyk"
+        script: npm run snyk:test
 deploy:
   provider: script
   script: "npm run lerna:deploy"
+  skip_cleanup: true
   on:
     all_branches: true
   # on:
