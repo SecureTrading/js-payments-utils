@@ -15,12 +15,13 @@ install:
 jobs:
   include:
     - stage: Test
-      name: "Lint"
-      script: npm run lint
-    - name: "Unit test"
-      script: npm run coverage
-    - name: "Snyk"
-      script: npm run snyk:test
+      name: "Test"
+      script:
+        - npm run lint
+        - npm run coverage
+        - npm run snyk:test
+before_deploy:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
 deploy:
   provider: script
   script: "npm run lerna:deploy"
