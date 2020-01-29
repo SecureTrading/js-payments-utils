@@ -2,6 +2,11 @@
   "name": "@securetrading/ts-modules",
   "private": true,
   "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
     "@types/jest": "^25.1.0",
     "@types/node": "^13.5.1",
     "jest": "^25.1.0",
@@ -26,5 +31,8 @@
     "snyk:monitor": "snyk monitor --org=secure-trading",
     "prepare": "npm run snyk:protect",
     "prepublish": "lerna run prepublish"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.8.3"
   }
 }
