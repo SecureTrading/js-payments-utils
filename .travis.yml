@@ -7,7 +7,7 @@ before_install:
   - npm install -g lerna
 install:
   - npm install
-  - npm run lerna:bootsrtap
+  - npm run lerna:bootstrap
   - npm run lerna:build
 jobs:
   include:
@@ -20,6 +20,5 @@ jobs:
 deploy:
   provider: script
   script: "npm run lerna:deploy"
-  skip_cleanup: true
   # on:
   #  tags: true
