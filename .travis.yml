@@ -19,7 +19,7 @@ jobs:
         - npm run snyk:test
 deploy:
   provider: script
-  script: ""
+  script: "npm run lerna:deploy"
     skip_cleanup: true
   # on:
   #  tags: true

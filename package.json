@@ -18,7 +18,7 @@
     "coverage": "jest --coverage",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build": "lerna run build",
-    "lerna:publish": "lerna publish from-package --yes",
+    "lerna:deploy": "lerna publish from-package --yes",
     "lint": "tslint packages/**/lib/**/*.ts",
     "prettier": "prettier packages/**/lib/**/*.ts --write",
     "snyk:test": "snyk test --org=secure-trading",
