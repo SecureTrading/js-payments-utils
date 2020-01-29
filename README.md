@@ -1,7 +1,11 @@
 # js-payments-utils
 
-Utilities that can be used when making online payments e.g. IIN/BIN detection 
+Monorepo of typescript libraries used by Secure Trading that can be used when making online payments e.g. luhn check validation 
 
+## Packages
+
+- [IIN Lookup](packages/iinlookup/README.md)
+- [Luhn check](packages/luhncheck/README.md)
 
 ## Technology Stack:
 
