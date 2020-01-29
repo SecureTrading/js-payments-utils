@@ -4,7 +4,6 @@ node_js:
   - '10'
 before_install:
   - npm install -g npm@latest
-  - npm install -g lerna
 install:
   - npm install
   - npm run lerna:bootstrap
@@ -20,5 +19,7 @@ jobs:
 deploy:
   provider: script
   script: "npm run lerna:deploy"
+  on:
+    all_branches: true
   # on:
   #  tags: true
