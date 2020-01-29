@@ -3,9 +3,9 @@ os: linux
 node_js:
   - '10'
 cache:
- npm: true
- directories:
-  - "node_modules"
+  npm: true
+  directories:
+    - "node_modules"
 before_install:
   - npm install -g npm@latest
 install:
@@ -16,12 +16,11 @@ jobs:
   include:
     - stage: Test
       name: "Lint"
-      script:
-        - npm run lint
+      script: npm run lint
     - name: "Unit test"
-        script: npm run coverage
+      script: npm run coverage
     - name: "Snyk"
-        script: npm run snyk:test
+      script: npm run snyk:test
 deploy:
   provider: script
   script: "npm run lerna:deploy"
