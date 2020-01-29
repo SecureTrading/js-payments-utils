@@ -1,6 +1,6 @@
 import each from 'jest-each';
 import { cardTree, brandMapping } from '../lib/cardtype';
-import Lookup from '../lib/iinlookup';
+import { iinLookup, IinLookup } from '../lib/iinlookup';
 import { BrandDetailsType } from '../lib/types';
 
 const nullType: BrandDetailsType = { type: null };
@@ -26,21 +26,21 @@ each([
   ],
   [{ defaultCardType: 'AMEX', supported: ['VISA', 'MASTERCARD'] }, { default: null, supported: ['VISA', 'MASTERCARD'] }]
 ]).test(
-  'Lookup.constructor', // Check different options get set on config correctly
+  'IinLookup.constructor', // Check different options get set on config correctly
   (testConfig, expected) => {
     if (expected instanceof Object) {
-      const lookup = new Lookup(testConfig);
+      const lookup = new IinLookup(testConfig);
       expect(lookup).toMatchObject(expected); // WARNING: toMatchObject only tests the keys in the expected are a subset of the actual - to test against {} we MUST use toEqual
     } else {
       expect(() => {
-        new Lookup(testConfig);
+        new IinLookup(testConfig);
       }).toThrow(expected);
     }
   }
 );
 
-test('Lookup.getAllBrands', () => {
-  const lookup = new Lookup();
+test('IinLookup.getAllBrands', () => {
+  const lookup = new IinLookup();
   // @ts-ignore
   expect(lookup.getAllBrands()).toEqual([
     'AMEX',
@@ -66,8 +66,8 @@ each([
   [undefined, false],
   [null, false],
   [{}, false]
-]).test('Lookup.isSupported', (cardTree, expected) => {
-  const lookup = new Lookup();
+]).test('IinLookup.isSupported', (cardTree, expected) => {
+  const lookup = new IinLookup();
   // @ts-ignore
   expect(lookup.isSupported(cardTree)).toBe(expected);
 });
@@ -76,8 +76,8 @@ each([
   ['VISA', { type: 'VISA', length: [13, 16, 19] }],
   ['MASTERCARD', { type: 'MASTERCARD', length: [16] }],
   ['AMEX', { type: 'AMEX', length: [15] }]
-]).test('Lookup.getCard', (type, expected) => {
-  const lookup = new Lookup();
+]).test('IinLookup.getCard', (type, expected) => {
+  const lookup = new IinLookup();
   // @ts-ignore
   expect(lookup.getCard(type)).toMatchObject(expected); // WARNING: toMatchObject only tests the keys in the expected are a subset of the actual - to test against {} we MUST use toEqual
   // @ts-ignore
@@ -91,10 +91,10 @@ each([
   ['3088', '3088-3094', true],
   ['3090', '3088-3094', true],
   ['3096', '3088-3094', false]
-]).test('Lookup.matchKey', (number, key, expected) => {
-  const lookup = new Lookup();
+]).test('IinLookup.matchKey', (number, key, expected) => {
+  const lookup = new IinLookup();
   // @ts-ignore
-  expect(lookup.matchKey(number, key)).toBe(expected);
+  expect(iinLookup.matchKey(number, key)).toBe(expected);
 });
 
 each([
@@ -105,8 +105,8 @@ each([
   [{ defaultCardType: 'AMEX', minMatch: 3 }, '34', '1', brandMapping['4']],
   [{ defaultCardType: 'AMEX', supported: ['AMEX'] }, '', '1', brandMapping['4']],
   [{ defaultCardType: 'MASTERCARD', maxMatch: 3 }, '3456', null, nullType]
-]).test('Lookup._lookup_withDefaults', (config, number, lookupResult, expected) => {
-  const lookup = new Lookup(config);
+]).test('IinLookup._lookup_withDefaults', (config, number, lookupResult, expected) => {
+  const lookup = new IinLookup(config);
   // @ts-ignore
   lookup._lookup = jest.fn();
   // @ts-ignore
@@ -114,8 +114,8 @@ each([
   expect(lookup.lookup(number)).toEqual(expected);
 });
 
-test('Lookup._lookup_allMappings', () => {
-  const lookup = new Lookup();
+test('IinLookup._lookup_allMappings', () => {
+  const lookup = new IinLookup();
   const mappings = Object.assign({ 198: nullType, null: nullType }, brandMapping);
   for (let result in mappings) {
     // @ts-ignore
@@ -174,8 +174,8 @@ each([
     8,
     5
   ]
-]).test('Lookup._lookup', (number, tree, expected, depth) => {
-  const lookup = new Lookup();
+]).test('IinLookup._lookup', (number, tree, expected, depth) => {
+  const lookup = new IinLookup();
   // @ts-ignore
   lookup._lookup = jest.fn(lookup._lookup); // mock the function as itself (so that we can spy how deep it has recursed)
   // @ts-ignore
