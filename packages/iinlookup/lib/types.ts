@@ -11,4 +11,4 @@ type BrandDetailsType = {
   cvcLength?: number[];
   format?: string;
 };
-export { Brand, CardTreeNode, CardTreeType, BrandDetailsType }
+export { Brand, CardTreeNode, CardTreeType, BrandDetailsType };

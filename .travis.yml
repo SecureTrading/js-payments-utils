@@ -1,0 +1,25 @@
+language: node_js
+os: linux
+node_js:
+  - '10'
+before_install:
+  - npm install -g npm@latest
+  - npm install -g lerna
+install:
+  - npm install
+  - npm run lerna:bootsrtap
+  - npm run lerna:build
+jobs:
+  include:
+    - stage: Test
+      name: Unit tests
+      script:
+        - npm run coverage
+        - npm run lint
+        - npm run snyk:test
+deploy:
+  provider: script
+  script: ""
+    skip_cleanup: true
+  # on:
+  #  tags: true

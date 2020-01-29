@@ -2,20 +2,28 @@
   "name": "ts-modules",
   "private": true,
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-optional-catch-binding": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/plugin-transform-typescript": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-typescript": "^7.8.3",
     "@types/jest": "^25.1.0",
     "@types/node": "^13.5.1",
     "jest": "^25.1.0",
     "jest-each": "^25.1.0",
     "lerna": "^3.20.2",
+    "prettier": "1.19.1",
+    "snyk": "^1.279.0",
     "ts-jest": "^25.0.0",
+    "tslint": "^6.0.0",
     "typescript": "^3.7.5"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:build": "lerna run build",
+    "lerna:publish": "lerna publish from-package --yes",
+    "lint": "tslint packages/**/lib/**/*.ts",
+    "prettier": "prettier packages/**/lib/**/*.ts --write",
+    "snyk:test": "snyk test --org=secure-trading",
+    "snyk:protect": "snyk protect",
+    "snyk:monitor": "snyk monitor --org=secure-trading",
+    "prepare": "npm run snyk:protect"
+  }
 }

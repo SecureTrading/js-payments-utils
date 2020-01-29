@@ -2,14 +2,12 @@ import { brandMapping, cardTree } from './cardtype';
 import { Brand, BrandDetailsType, CardTreeNode } from './types';
 import Utils from './utils';
 
-
 export interface IBinLookupConfigType {
   defaultCardType?: string;
   minMatch?: number;
   maxMatch?: number;
   supported?: string[];
 }
-
 
 class IinLookup {
   public static DEFAULT_MIN_MATCH = 0;

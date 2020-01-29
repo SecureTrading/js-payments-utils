@@ -22,8 +22,7 @@
     "url": "git+https://github.com/SecureTrading/js-payments-utils.git"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "jest --config=../../jest.config.js"
+    "build": "tsc"
   },
   "bugs": {
     "url": "https://github.com/SecureTrading/js-payments-utils/issues"
