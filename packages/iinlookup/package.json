@@ -19,12 +19,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SecureTrading/js-payments-utils.git"
+    "url": "git+https://github.com/SecureTrading/ts-modules.git"
   },
   "scripts": {
     "build": "tsc"
   },
   "bugs": {
-    "url": "https://github.com/SecureTrading/js-payments-utils/issues"
+    "url": "https://github.com/SecureTrading/ts-modules/issues"
   }
 }

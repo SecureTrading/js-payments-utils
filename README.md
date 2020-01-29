@@ -1,4 +1,4 @@
-# js-payments-utils
+# Secure Trading TypeScript Modules
 
 Monorepo of typescript libraries used by Secure Trading that can be used when making online payments e.g. luhn check validation 
 
