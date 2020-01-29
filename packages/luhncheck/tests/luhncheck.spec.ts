@@ -1,10 +1,8 @@
-// given
 import each from 'jest-each';
-import validation from '../src/validation';
+import { luhnCheck } from '../lib/luhncheck';
 
-describe('validation', () => {
-  // given
-  describe('luhnCheck', () => {
+// given
+describe('luhnCheck', () => {
     // then
     each([
       ['', false],
@@ -14,8 +12,6 @@ describe('validation', () => {
       ['5200000000001005', true],
       ['5200000000001006', false]
     ]).test('should return desired value', (number, expected) => {
-      expect(validation.luhnCheck(number)).toBe(expected);
+      expect(luhnCheck(number)).toBe(expected);
     });
-  });
-
 });

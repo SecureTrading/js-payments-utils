@@ -6,17 +6,17 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
+    "moduleResolution": "node",
     "target": "es5",
     "resolveJsonModule": true,
     "jsx": "react",
     "declaration": true
   },
   "include": [
-    "./src/**/*",
-    "types.d.ts"
+    "./packages/**/*"
   ],
   "exclude": [
     "node_modules",
-    "./src/**/*.spec.ts" // exclude all that contain "spec.ts" in name
+    "./packages/**/*.spec.ts" // exclude all that contain "spec.ts" in name
   ]
 }

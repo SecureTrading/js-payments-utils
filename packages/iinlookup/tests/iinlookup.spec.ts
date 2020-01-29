@@ -1,7 +1,7 @@
 import each from 'jest-each';
-import { cardTree, brandMapping } from '../src/cardtype';
-import Lookup from '../src/lookup';
-import { BrandDetailsType } from '../types';
+import { cardTree, brandMapping } from '../lib/cardtype';
+import Lookup from '../lib/iinlookup';
+import { BrandDetailsType } from '../lib/types';
 
 const nullType: BrandDetailsType = { type: null };
 

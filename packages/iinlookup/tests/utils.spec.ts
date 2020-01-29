@@ -1,5 +1,5 @@
 import each from 'jest-each';
-import Utils from '../src/utils';
+import Utils from '../lib/utils';
 
 localStorage.setItem = jest.fn();
 

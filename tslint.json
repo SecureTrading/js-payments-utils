@@ -30,8 +30,8 @@
   "linterOptions": {
     "exclude": [
       "node_modules",
-      "./src/**/*.spec.ts"
-      // exclude all that contain "spec.ts" in name
+      "**/node_modules",
+      "**/*.spec.ts"
     ]
   }
 }

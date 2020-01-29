@@ -1,5 +1,5 @@
-import { Brand, BrandDetailsType, CardTreeNode } from '../types';
 import { brandMapping, cardTree } from './cardtype';
+import { Brand, BrandDetailsType, CardTreeNode } from './types';
 import Utils from './utils';
 
 export interface IBinLookupConfigType {
@@ -9,7 +9,7 @@ export interface IBinLookupConfigType {
   supported?: string[];
 }
 
-class Lookup {
+class IinLookup {
   public static DEFAULT_MIN_MATCH = 0;
   public static DEFAULT_MAX_MATCH = 6;
   private minMatch: number;
@@ -19,8 +19,8 @@ class Lookup {
 
   constructor(config?: IBinLookupConfigType) {
     config = config || {};
-    this.minMatch = 'minMatch' in config ? config.minMatch : Lookup.DEFAULT_MIN_MATCH;
-    this.maxMatch = 'maxMatch' in config ? config.maxMatch : Lookup.DEFAULT_MAX_MATCH;
+    this.minMatch = 'minMatch' in config ? config.minMatch : IinLookup.DEFAULT_MIN_MATCH;
+    this.maxMatch = 'maxMatch' in config ? config.maxMatch : IinLookup.DEFAULT_MAX_MATCH;
 
     this.supported = this.getAllBrands();
     if ('supported' in config) {
@@ -149,5 +149,4 @@ class Lookup {
     );
   }
 }
-
-export default Lookup;
+export default IinLookup;

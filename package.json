@@ -1,71 +1,30 @@
 {
-  "name": "@securetrading/js-payments-utils",
-  "version": "0.0.6",
-  "description": "> A JavaScript library for different utility functions focused around online payment processing.",
-  "scripts": {
-    "build": "webpack --config webpack.js",
-    "test": "jest --watchAll",
-    "coverage": "jest --coverage",
-    "snyk": "snyk test --org=secure-trading",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
-  },
-  "files": [
-    "dist",
-    "types.d.ts"
-  ],
-  "main": "dist/PaymentsUtils.js",
-  "types": "types.d.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SecureTrading/js-payments-utils.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SecureTrading/js-payments-utils/issues"
-  },
-  "homepage": "https://github.com/SecureTrading/js-payments-utils#readme",
+  "name": "ts-modules",
+  "private": true,
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-optional-catch-binding": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/plugin-transform-typescript": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-typescript": "^7.8.3",
-    "@types/jest": "^24.9.0",
-    "@types/jest-each": "^24.3.0",
-    "@types/jest-matchers": "^25.1.0",
-    "babel-jest": "^25.1.0",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.1",
-    "coveralls": "^3.0.9",
-    "friendly-errors-webpack-plugin": "^1.7.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
+    "@types/jest": "^25.1.0",
+    "@types/node": "^13.5.1",
     "jest": "^25.1.0",
     "jest-each": "^25.1.0",
-    "jest-fetch-mock": "^3.0.1",
-    "jest-get-type": "^25.1.0",
+    "lerna": "^3.20.2",
     "prettier": "1.19.1",
     "snyk": "^1.279.0",
     "ts-jest": "^25.0.0",
-    "ts-loader": "^6.2.1",
     "tslint": "^6.0.0",
-    "tslint-loader": "^3.5.4",
-    "typescript": "^3.7.5",
-    "webpack": "^4.41.5",
-    "webpack-bundle-analyzer": "^3.6.0",
-    "webpack-cli": "^3.3.10"
+    "typescript": "^3.7.5"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.8.3",
-    "@babel/runtime": "^7.8.3"
-  },
-  "snyk": true
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:build": "lerna run build",
+    "lerna:deploy": "lerna publish from-package --yes",
+    "lint": "tslint packages/**/lib/**/*.ts",
+    "prettier": "prettier packages/**/lib/**/*.ts --write",
+    "snyk:test": "snyk test --org=secure-trading",
+    "snyk:protect": "snyk protect",
+    "snyk:monitor": "snyk monitor --org=secure-trading",
+    "prepare": "npm run snyk:protect",
+    "prepublish": "lerna run prepublish"
+  }
 }
