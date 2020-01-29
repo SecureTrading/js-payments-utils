@@ -1,12 +1,12 @@
 {
-  "name": "@securetrading/ts-luhn-check",
-  "version": "0.0.2",
-  "description": "Validate card numbers by use of the luhncheck",
+  "name": "@securetrading/ts-iin-lookup",
+  "version": "0.0.1",
+  "description": "Perform an IIN lookup to determine the credit card type",
   "author": "Secure Trading <support@securetrading.com>",
   "homepage": "https://docs.securetrading.com",
   "license": "MIT",
-  "main": "dist/luhncheck.js",
-  "typings": "dist/luhncheck.d.ts",
+  "main": "dist/iinlookup.js",
+  "typings": "dist/iinlookup.d.ts",
   "directories": {
     "lib": "dist",
     "test": "tests"
