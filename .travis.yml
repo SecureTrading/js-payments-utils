@@ -20,6 +20,6 @@ jobs:
 deploy:
   provider: script
   script: "npm run lerna:deploy"
-    skip_cleanup: true
+  skip_cleanup: true
   # on:
   #  tags: true
