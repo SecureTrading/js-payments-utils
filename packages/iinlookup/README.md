@@ -5,8 +5,7 @@
 ## Usage
 
 ```
-import { IinLookup } from '@securetrading/ts-iin-lookup';
-const lookup = new IinLookup();
-const details = lookup.lookup('4111111111111111');
+import { iinLookup } from '@securetrading/ts-iin-lookup';
+const details = iinLookup('4111111111111111');
 console.log(details.type); // Payment brand e.g. VISA/MASTERCARD/AMEX etc
 ```

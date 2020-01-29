@@ -149,4 +149,5 @@ class IinLookup {
     );
   }
 }
-export default IinLookup;
+const iinLookup = new IinLookup();
+export { iinLookup, IinLookup };
