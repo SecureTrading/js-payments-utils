@@ -1,0 +1,28 @@
+{
+  "name": "@securetrading/ts-luhncheck",
+  "version": "0.0.1",
+  "description": "Validate card numbers by use of the luhncheck",
+  "author": "Secure Trading <support@securetrading.com>",
+  "homepage": "https://docs.securetrading.com",
+  "license": "MIT",
+  "main": "dist/luhncheck.ts",
+  "typings": "dist/luhncheck.d.ts",
+  "directories": {
+    "lib": "dist",
+    "test": "tests"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SecureTrading/js-payments-utils.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config=../../jest.config.js"
+  },
+  "bugs": {
+    "url": "https://github.com/SecureTrading/js-payments-utils/issues"
+  }
+}

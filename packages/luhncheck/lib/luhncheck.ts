@@ -1,4 +1,4 @@
-function luhnCheck(cardNumber: string): boolean {
+export function luhnCheck(cardNumber: string): boolean {
   const cardNumberWithoutSpaces = cardNumber.replace(/\s/g, '');
   let bit = 1;
   let cardNumberLength = cardNumberWithoutSpaces.length;
@@ -11,8 +11,6 @@ function luhnCheck(cardNumber: string): boolean {
     const algorithmValue = bit ? luhnCheckArray[val] : val;
     sum += algorithmValue;
   }
-  if (sum && sum % 10 === 0) { return true; } else { return false; }
+  // noinspection RedundantConditionalExpressionJS
+  return sum && sum % 10 === 0 ? true : false;
 }
-
-const validation = { luhnCheck };
-export default validation;
