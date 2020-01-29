@@ -1,6 +1,6 @@
 {
   "name": "@securetrading/ts-luhn-check",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Validate card numbers by use of the luhncheck",
   "author": "Secure Trading <support@securetrading.com>",
   "homepage": "https://docs.securetrading.com",
