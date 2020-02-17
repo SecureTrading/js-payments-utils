@@ -1,6 +1,6 @@
 {
   "name": "@securetrading/ts-iin-lookup",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Perform an IIN lookup to determine the credit card type",
   "author": "Secure Trading <support@securetrading.com>",
   "homepage": "https://docs.securetrading.com",
