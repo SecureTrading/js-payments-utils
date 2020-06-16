@@ -8,15 +8,15 @@ describe('jwtgenerator', () => {
   // when
   const obj = {
     iat: 1592298893548,
-    iss: 'testiss',
-    payload: {
-      accounttypedescription: 'ABCD',
-      baseamount: '1000',
-      currencyiso3a: 'GBP',
-      locale: 'en_GB',
-      sitereference: 'testaccount'
-    },
-    secret: 'somerandomsecret'
+    'iss': 'am0310.autoapi',
+    'secret': 'ja<n}yP]3$1E$iUYtn_*i7))24I,=^',
+    'payload': {
+      'baseamount': '1000',
+      'accounttypedescription': 'ECOM',
+      'currencyiso3a': 'GBP',
+      'sitereference': 'test_james38641',
+      'locale': 'en_GB'
+    }
   };
 
   // then
