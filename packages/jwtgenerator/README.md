@@ -5,5 +5,5 @@
 ## Usage
 ```
 import { jwtgenerator } from '@securetrading/jwtgenerator';
-luhnCheck(payload, secret);
+jwtgenerator(payload, secret, iss);
 ```
