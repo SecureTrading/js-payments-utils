@@ -1,5 +1,4 @@
 export interface IPayload {
-  iss: string;
   baseamount: string;
   accounttypedescription: string;
   currencyiso3a: string;
