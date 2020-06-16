@@ -26,11 +26,9 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel lib --out-dir=dist --extensions=.ts,.tsx --source-maps=inline --config-file=../../babel.config.js",
     "build": "npm run type-check && npm run build:types && npm run build:js",
-    "jwtgen": "node dist/jwtgenerator.js --payload payload.json --secret somesecret --iss testiss"
+    "jwtgen": "ts-node cli.ts"
   },
-  "bin": {
-    "jwtgen": "./cli.js"
-  },
+
   "bugs": {
     "url": "https://github.com/SecureTrading/jwt-generator/issues"
   }
