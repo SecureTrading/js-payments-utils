@@ -1,0 +1,33 @@
+{
+  "name": "@securetrading/jwt-generator",
+  "version": "0.0.1",
+  "description": "Generator of JSON Web Token",
+  "author": "Secure Trading <support@securetrading.com>",
+  "homepage": "https://docs.securetrading.com",
+  "license": "MIT",
+  "main": "dist/jwtgenerator.js",
+  "typings": "dist/jwtgenerator.d.ts",
+  "directories": {
+    "lib": "dist",
+    "test": "tests"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SecureTrading/ts-modules.git"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel lib --out-dir=dist --extensions=.ts,.tsx --source-maps=inline --config-file=../../babel.config.js",
+    "build": "npm run type-check && npm run build:types && npm run build:js"
+  },
+  "bugs": {
+    "url": "https://github.com/SecureTrading/jwt-generator/issues"
+  }
+}

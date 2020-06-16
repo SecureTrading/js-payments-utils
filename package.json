@@ -36,5 +36,8 @@
     "snyk:monitor": "snyk monitor --org=secure-trading",
     "prepare": "npm run snyk:protect",
     "prepublish": "lerna run prepublish"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
   }
 }
