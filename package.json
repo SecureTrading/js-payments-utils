@@ -15,6 +15,7 @@
     "@types/node": "^14.0.1",
     "jest": "^25.1.0",
     "jest-each": "^26.0.1",
+    "jsonwebtoken": "^8.5.1",
     "lerna": "^3.20.2",
     "minimist": "^1.2.5",
     "prettier": "2.0.5",
@@ -36,8 +37,5 @@
     "snyk:monitor": "snyk monitor --org=secure-trading",
     "prepare": "npm run snyk:protect",
     "prepublish": "lerna run prepublish"
-  },
-  "dependencies": {
-    "jsonwebtoken": "^8.5.1"
   }
 }
