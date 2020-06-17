@@ -6,4 +6,9 @@
 ```
 import { jwtgenerator } from '@securetrading/jwtgenerator';
 jwtgenerator(payload, secret, iss);
+
+or from CLI:
+
+npm run jwtgen
+
 ```

@@ -30,8 +30,5 @@
   },
   "bugs": {
     "url": "https://github.com/SecureTrading/jwt-generator/issues"
-  },
-  "dependencies": {
-    "ts-node": "^8.10.2"
   }
 }
