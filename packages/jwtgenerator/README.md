@@ -10,5 +10,4 @@ jwtgenerator(payload, secret, iss);
 or from CLI:
 
 npm run jwtgen
-
 ```
