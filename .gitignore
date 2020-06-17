@@ -67,3 +67,5 @@ typings/
 # Generated files folder
 dist/
 
+# config.json.dist file
+packages/jwtgenerator/config.json.dist
