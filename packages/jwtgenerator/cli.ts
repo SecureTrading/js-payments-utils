@@ -7,5 +7,3 @@ const { payload, iss, secret } = config;
 // @ts-ignore
 const jwt = jwtgenerator(payload, secret, iss);
 console.log(jwt);
-
-
