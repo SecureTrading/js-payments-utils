@@ -68,5 +68,5 @@ typings/
 dist/
 
 # config.json.dist file
-./packages/jwtgenerator/config.json.dist
+packages/jwtgenerator/config.json.dist
 
