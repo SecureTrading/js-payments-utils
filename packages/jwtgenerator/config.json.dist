@@ -1,7 +1,7 @@
 {
   "iat": 1592298893548,
   "iss": "",
-  "secret": "",
+  "secret": "dupa dua",
   "payload": {
     "baseamount": "1000",
     "accounttypedescription": "ECOM",
