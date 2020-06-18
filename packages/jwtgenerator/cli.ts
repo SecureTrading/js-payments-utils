@@ -1,10 +1,16 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node -r "ts-node/register"
 
 import { jwtgenerator } from './lib/jwtgenerator';
-import * as config from './config.json';
+import * as fs from 'fs';
 
-const { payload, iss, secret } = config;
-
-const jwt = jwtgenerator(payload, secret, iss);
-
-console.log(jwt);
+(() => {
+  const encoding = 'utf8';
+  const path = process.argv[2];
+  if (!path) {
+    console.error('Set file path');
+    return;
+  }
+  const json = JSON.parse(fs.readFileSync(path, encoding));
+  const jwt = jwtgenerator(json.payload, json.secret, json.iss);
+  console.log(jwt);
+})();
