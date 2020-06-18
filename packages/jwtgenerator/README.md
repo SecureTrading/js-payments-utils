@@ -9,5 +9,5 @@ jwtgenerator(payload, secret, iss);
 
 or from CLI:
 
-npm run jwtgen
+npm run jwtgen 'pathtofile'
 ```
