@@ -37,6 +37,10 @@
     "snyk:protect": "snyk protect",
     "snyk:monitor": "snyk monitor --org=secure-trading",
     "prepare": "npm run snyk:protect",
-    "prepublish": "lerna run prepublish"
+    "prepublish": "lerna run prepublish",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "dependencies": {
+    "npm-force-resolutions": "0.0.3"
   }
 }
