@@ -2,6 +2,8 @@
   "name": "@securetrading/ts-modules",
   "private": true,
   "resolutions": {
+    "ajv": "^6.12.0",
+    "dot-prop": "^5.2.0",
     "minimist": "^1.2.5"
   },
   "devDependencies": {
