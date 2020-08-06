@@ -9,7 +9,7 @@ cache:
 before_install:
   - npm install -g npm@latest
 install:
-  - npm install
+  - npm ci
   - npm run lerna:bootstrap
   - npm run lerna:build
 jobs:
