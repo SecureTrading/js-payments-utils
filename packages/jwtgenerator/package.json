@@ -1,6 +1,6 @@
 {
   "name": "@securetrading/jwt-generator",
-  "version": "0.0.3,
+  "version": "0.0.3",
   "description": "Generator of JSON Web Token",
   "author": "Secure Trading <support@securetrading.com>",
   "homepage": "https://docs.securetrading.com",
