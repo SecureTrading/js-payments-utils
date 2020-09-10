@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6fb7c69d-158d-4b27-ab92-372d9257a31f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.snyk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lerna.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/lib/cardtype.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/lib/iinlookup.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/lib/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/tests/iinlookup.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/tests/utils.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iinlookup/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/jwtgenerator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/jwtgenerator/cli.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/jwtgenerator/lib/IPayload.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/jwtgenerator/lib/jwtgenerator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/jwtgenerator/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/jwtgenerator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/jwtgenerator/tests/jwtgenerator.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/jwtgenerator/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/luhncheck/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/luhncheck/lib/luhncheck.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/luhncheck/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/luhncheck/tests/luhncheck.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/luhncheck/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="delete-all-files-from-repo" />
+                    <option name="lastUsedInstant" value="1599724197" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1598261007" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="synchronize-with-develop" />
+                    <option name="lastUsedInstant" value="1597314247" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XwGVrdWPyi2QxqNNe8BEMCR8yG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/jwtgenerator" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\workspace\ts-modules\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="ts.external.directory.path" value="C:\workspace\ts-modules\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\ts-modules\packages\jwtgenerator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\ts-modules\packages\jwtgenerator\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.lerna:build">
+    <configuration name="jwtgen (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/jwtgenerator/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="jwtgen" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lerna:bootstrap" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lerna:bootstrap" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lerna:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lerna:build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lerna:deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lerna:deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.lerna:deploy" />
+        <item itemvalue="npm.lerna:build" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.lerna:bootstrap" />
+        <item itemvalue="npm.jwtgen (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fb7c69d-158d-4b27-ab92-372d9257a31f" name="Default Changelist" comment="" />
+      <created>1581949769426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581949769426</updated>
+      <workItem from="1581949771061" duration="1391000" />
+      <workItem from="1581952658901" duration="1491000" />
+      <workItem from="1586900334702" duration="933000" />
+      <workItem from="1586934787514" duration="3943000" />
+      <workItem from="1586940358792" duration="654000" />
+      <workItem from="1586951348730" duration="640000" />
+      <workItem from="1588193622748" duration="1377000" />
+      <workItem from="1588238236936" duration="777000" />
+      <workItem from="1588278241987" duration="400000" />
+      <workItem from="1588665550074" duration="87000" />
+      <workItem from="1588666008731" duration="613000" />
+      <workItem from="1588937942263" duration="730000" />
+      <workItem from="1589354019069" duration="963000" />
+      <workItem from="1592290279998" duration="7879000" />
+      <workItem from="1592303835326" duration="728000" />
+      <workItem from="1592307967522" duration="14042000" />
+      <workItem from="1592377015832" duration="3066000" />
+      <workItem from="1592386556441" duration="1007000" />
+      <workItem from="1592469528786" duration="8777000" />
+      <workItem from="1592910602851" duration="708000" />
+      <workItem from="1592997805174" duration="1179000" />
+      <workItem from="1593001580894" duration="1706000" />
+      <workItem from="1593067636353" duration="3746000" />
+      <workItem from="1593081656058" duration="811000" />
+      <workItem from="1593082840388" duration="4880000" />
+      <workItem from="1593460828322" duration="1366000" />
+      <workItem from="1593528457972" duration="665000" />
+      <workItem from="1593595165532" duration="74000" />
+      <workItem from="1593636580395" duration="884000" />
+      <workItem from="1593671334934" duration="1004000" />
+      <workItem from="1594016038576" duration="876000" />
+      <workItem from="1594046358498" duration="1827000" />
+      <workItem from="1594287317152" duration="379000" />
+      <workItem from="1594370071689" duration="3429000" />
+      <workItem from="1594390811774" duration="1404000" />
+      <workItem from="1594991835866" duration="1775000" />
+      <workItem from="1595226057208" duration="6123000" />
+      <workItem from="1595318191661" duration="881000" />
+      <workItem from="1596122027438" duration="1431000" />
+      <workItem from="1596182154089" duration="1420000" />
+      <workItem from="1596187012658" duration="776000" />
+      <workItem from="1596189581740" duration="544000" />
+      <workItem from="1596611805094" duration="1178000" />
+      <workItem from="1596622952474" duration="1778000" />
+      <workItem from="1596705539186" duration="829000" />
+      <workItem from="1597225141558" duration="341000" />
+      <workItem from="1597231420356" duration="1546000" />
+      <workItem from="1597313995795" duration="836000" />
+      <workItem from="1598260957545" duration="1248000" />
+      <workItem from="1598358944721" duration="723000" />
+      <workItem from="1598431119032" duration="1250000" />
+      <workItem from="1598531707286" duration="4718000" />
+      <workItem from="1599047000056" duration="1342000" />
+      <workItem from="1599123134886" duration="428000" />
+      <workItem from="1599568610731" duration="865000" />
+      <workItem from="1599724169532" duration="102000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="shellPath" value="C:\Git\bin\sh.exe" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1597235197530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597235197530" />
+    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1596122782576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596122782576" />
+    <state width="1921" height="281" key="GridCell.Tab.0.bottom" timestamp="1596190125621">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596190125621" />
+    <state width="1921" height="281" key="GridCell.Tab.0.center" timestamp="1596190125620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596190125620" />
+    <state width="1921" height="281" key="GridCell.Tab.0.left" timestamp="1596190125620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596190125620" />
+    <state width="1921" height="281" key="GridCell.Tab.0.right" timestamp="1596190125620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596190125620" />
+    <state x="368" y="85" key="MergeDialog" timestamp="1594390913400">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="368" y="85" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594390913400" />
+    <state x="840" y="385" width="718" height="458" key="MultipleFileMergeDialog" timestamp="1596187131760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="840" y="385" width="718" height="458" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596187131760" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1598452944973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598452944973" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596611911117">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596611911117" />
+    <state x="668" y="239" width="583" height="566" key="find.popup" timestamp="1597235138292">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="239" width="583" height="566" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597235138292" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597235177614">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597235177614" />
+  </component>
+</project>
